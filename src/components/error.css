@@ -1,0 +1,50 @@
+.error {
+   padding: 2em;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.error .wrapper {
+   border: 1px solid;
+   width: 48%;
+   padding: 2em;
+   background-color: black;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.error .wrapper a {
+   color: unset;
+   text-decoration: none;
+   border: 1px solid;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0.5em 0;
+}
+.error .wrapper a:hover {
+   text-decoration: underline;
+   color: #dcca87;
+}
+@media (width < 1440px) {
+   .error .wrapper {
+      width: 60%;
+   }
+}
+@media (width < 1024px) {
+   .error .wrapper {
+      width: 80%;
+   }
+}
+@media (width < 768px) {
+   .error {
+      padding: 1em;
+      text-align: center;
+   }
+   .error .wrapper {
+      width: 100%;
+   }
+}
